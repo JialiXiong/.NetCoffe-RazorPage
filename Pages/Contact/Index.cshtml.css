@@ -1,0 +1,36 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(37, 22, 13, 0.5);
+    color: white;
+}
+
+.input {
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+#msg {
+    width: 20%;
+    padding: 12px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+.send {
+    padding: 12px;
+    margin: 40px;
+    width: 10%;
+    border: none;
+    outline: none;
+
+}
+
+.send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}

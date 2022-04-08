@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* .Edit {
+  color: black !important;
+  font-family: 'Times New Roman', Times, serif;
+} */
+
+.homeback {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+
+  z-index: -1;
+
+}
+
+.menuback {
+
+  height: 100vh;
+
+}
+
+h1 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 120px;
+}

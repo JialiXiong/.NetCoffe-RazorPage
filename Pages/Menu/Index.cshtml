@@ -1,0 +1,70 @@
+@page
+@model W21_Assignment.Pages.Menu.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<img src="~/imgs/9.jpg" class="homeback" />
+<div class="menuback">
+    <h1>Our Menu</h1>
+
+    <p>
+        <a asp-page="Create" class="Edit">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Menu[0].Main)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Menu[0].Entree)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Menu[0].Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Menu[0].Day)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Menu)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Main)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Entree)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Day)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.MenuId" class="Edit">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.MenuId" class="Edit">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.MenuId" class="Edit">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<style>
+    .table {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    .Edit {
+        color: black !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 20px !important;
+    }
+</style>

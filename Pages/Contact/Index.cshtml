@@ -1,0 +1,25 @@
+@page
+@model W21_Assignment.Pages.Coffee.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<img src="~/imgs/5.jpg" class="homeback" />
+<section id="contact">
+    <h1>Contact us</h1>
+    <form action="" class="form">
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <input type="email" name="email" class="input" placeholder="Enter Your Email">
+        <textarea name="msg" class="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="Submit" class="send">
+    </form>
+</section>
+<style>
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 20px 0px;
+    }
+</style>

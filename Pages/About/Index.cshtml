@@ -1,0 +1,131 @@
+@page
+@model W21_Assignment.Pages.Coffee.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<img src="~/imgs/4.jpg" class="homeback" />
+<section id="about">
+    <div id="pic">
+        <h1 class="heading1">About Us</h1>
+        <div id="intro">
+            <img src="~/imgs/4.jpg">
+            <div class="text">
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima autem perspiciatis, commodi
+                    assumenda provident voluptatum modi iure accusamus explicabo quae velit amet maxime laborum animi ex
+                    vel dicta doloribus!
+                </p>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="box">
+                <h3>WHAT WE DO</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt facere eius nihil
+                    possimus distinctio, quisquam, animi odio veniam perspiciatis aliquam facilis quo molestiae,
+                    temporibus voluptatem obcaecati modi! Quibusdam commodi, dolore quaerat minima nostrum dolorem iusto
+                    iure ut explicabo possimus.
+                </p>
+            </div>
+            <div class="box">
+                <h3>OUR COFFE</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quas iure porro dolor quo quasi
+                    eaque nesciunt id totam distinctio.
+            </div>
+            <div class="box">
+                <h3>OUR PROCESS</h3>
+                <p>
+                    DISCOVERY: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae dignissimos
+                    sint, temporibus dolorem fugiat id ratione amet vel accusamus laboriosam, maxime, corporis
+                    necessitatibus deleniti tenetur ipsa ad non provident..
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<style>
+    #about {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 30px 210px;
+        margin-bottom: 100px;
+
+    }
+
+    #pic {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading1 {
+        color: white;
+        font-family: century;
+        font-size: 3rem;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #pic img {
+        width: 575px;
+        height: 400px;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 45px;
+        background-color: rgb(76, 68, 59, 0.5);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        color: white;
+    }
+
+    h2 {
+        font-family: century;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+        border: rgb(156, 135, 119) 1px solid;
+        border-radius: 15px;
+        background: linear-gradient(to top, rgb(76, 68, 59, 0.5) 50%, white 50%);
+        background-size: 100% 200%;
+        transition: all 0.8s;
+    }
+
+    .box:hover {
+        background-position: bottom;
+        color: white;
+        border: none;
+        box-shadow: 0 0 20px rgba(172, 151, 135, 1);
+    }
