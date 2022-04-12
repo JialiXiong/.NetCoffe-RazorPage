@@ -50,10 +50,10 @@ ul {
 .nav-item {
   list-style: none;
   text-decoration: none !important;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0 30px;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  margin: 0 30px !important;
 }
 
 .navbar {

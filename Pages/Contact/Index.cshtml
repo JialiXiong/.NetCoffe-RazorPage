@@ -5,15 +5,73 @@
     ViewData["Title"] = "Index";
 }
 <img src="~/imgs/5.jpg" class="homeback" />
-<section id="contact">
-    <h1>Contact us</h1>
-    <form action="" class="form">
-        <input type="text" name="name" class="input" placeholder="Enter Your Name">
-        <input type="email" name="email" class="input" placeholder="Enter Your Email">
-        <textarea name="msg" class="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-        <input type="submit" value="Submit" class="send">
-    </form>
-</section>
+<h1>Contact Us</h1>
+
+
+<div class="container">
+    @* <h1>Contact Us</h1> *@
+
+    <p>If you have any questions or concerns please contact us here:</p>
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Send your request</h3>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name">
+
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Enter your phone number">
+
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email">
+
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="">
+
+                    </div>
+                </div>
+
+                <label>Message</label>
+                <textarea rows="5" placeholder="Type your message..."></textarea>
+
+                <button type="Submit">SEND</button>
+
+            </form>
+
+        </div>
+
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>.NETCoffee@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>819-293-3939</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Coffee St. J92 4N3, Quebec</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
 <style>
     .form {
         display: flex;

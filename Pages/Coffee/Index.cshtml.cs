@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -20,10 +21,13 @@ namespace W21_Assignment.Pages.Coffee
         }
 
         public IList<W21_Assignment.Models.Coffee> Coffee { get; set; }
-
+        public string? UserEmail { get; set; }
+        // public int? UType { get; set; }
         public async Task OnGetAsync()
         {
             Coffee = await _context.Coffee.ToListAsync();
+
+
         }
     }
 }

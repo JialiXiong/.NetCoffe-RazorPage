@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace W21_Assignment.Migrations
 {
     [DbContext(typeof(DBContext))]
-    partial class DBContextModelSnapshot : ModelSnapshot
+    [Migration("20220408185659_userupdate")]
+    partial class userupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -266,12 +268,9 @@ namespace W21_Assignment.Migrations
                     b.ToTable("Menu");
                 });
 
-            modelBuilder.Entity("W21_Assignment.Models.SiteUser", b =>
+            modelBuilder.Entity("W21_Assignment.Models.User", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
-
-                    b.Property<string>("City")
-                        .HasColumnType("longtext");
 
                     b.Property<string>("Name")
                         .HasColumnType("longtext");
@@ -279,10 +278,11 @@ namespace W21_Assignment.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("PostalCode")
+                    b.Property<string>("Postalcode")
                         .HasColumnType("longtext");
 
                     b.Property<string>("Province")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("StreetName")
@@ -294,7 +294,7 @@ namespace W21_Assignment.Migrations
                     b.Property<int>("UserType")
                         .HasColumnType("int");
 
-                    b.HasDiscriminator().HasValue("SiteUser");
+                    b.HasDiscriminator().HasValue("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

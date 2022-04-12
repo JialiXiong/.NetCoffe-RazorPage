@@ -42,6 +42,207 @@ body {
 
 }
 
+.netborderbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.netborderbox1 {
+  align-self: center;
+  background-color: rgba(0, 0, 0, .4);
+  width: 500px;
+  height: 420px;
+}
+
+.netborderbox2 {
+  font-family: algerian;
+  font-size: calc(3.475rem + 2.7vw);
+  color: white;
+  /* font-size: 5em; */
+  text-shadow: 4px 4px 2px black;
+  align-self: center;
+  background-color: rgba(0, 0, 0, .1);
+  border: 4px solid white;
+  /* border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%; */
+  margin-top: 4%;
+  margin-left: 10%;
+  width: 400px;
+  height: 250px;
+}
+
+.h1-index-display {
+  font-family: algerian;
+  border: 4px solid white;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  width: 480px;
+  margin-top: 4%;
+  margin-left: 2%;
+  padding-bottom: 2%;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexbox-item {
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+  border: 3px solid black;
+}
+
+.flexbox-item1 {
+  position: relative;
+  text-align: center;
+  min-height: 80vh;
+  font-size: large;
+  font-family: algerian;
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("https://picsum.photos/500?random=3");
+  /* Can only have 1 BG color/image so using blend to combine the 2 */
+  background-blend-mode: multiply;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  height: 0;
+  right: 50px;
+  width: 90%;
+  /* left: 50px; */
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  font-family: algerian;
+  /* setting opacity to 60% to blend with bg img */
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("/dist/img/bones.jpeg");
+  /* Can only have 1 BG color/image so using blend to combine the 2 */
+  background-blend-mode: multiply;
+  background-size: cover;
+  text-decoration: none;
+  border: 3px solid white;
+  margin: 15px auto;
+  padding: 29px auto;
+  transition: height 4s ease-out;
+  overflow: hidden;
+}
+
+.flexbox-item1:hover>.text {
+  height: 70vh;
+}
+
+.flexbox-item2 {
+  flex-grow: 2;
+  position: relative;
+  text-align: center;
+  min-height: 80vh;
+  font-size: x-large;
+  font-family: algerian;
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("https://picsum.photos/500?random=3");
+  /* Can only have 1 BG color/image so using blend to combine the 2 */
+  background-blend-mode: multiply;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  height: 0;
+  right: 50px;
+  width: 90%;
+  text-shadow: 4px 4px 2px black;
+  /* left: 50px; */
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  font-family: algerian;
+  font-size: large;
+  /* setting opacity to 60% to blend with bg img */
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("/dist/img/a-g-bell.jpg");
+  /* Can only have 1 BG color/image so using blend to combine the 2 */
+  background-blend-mode: multiply;
+  background-size: contain;
+  text-decoration: none;
+  border: 3px solid white;
+  margin: 15px auto;
+  padding: 29px auto;
+  transition: height 2s ease-out;
+  overflow: hidden;
+}
+
+.flexbox-item2:hover>.text2 {
+  height: 70vh;
+}
+
+.flexbox-item3 {
+  position: relative;
+  text-align: center;
+  min-height: 80vh;
+  font-size: large;
+  font-family: algerian;
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("https://picsum.photos/500?random=7");
+  /* Can only have 1 BG color/image so using blend to combine the 2 */
+  background-blend-mode: multiply;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  height: 0;
+  right: 50px;
+  width: 90%;
+  /* left: 50px; */
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  font-size: large;
+  /* setting opacity to 60% to blend with bg img */
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("/dist/img/Free_willy.jpg");
+  /* Can only have 1 BG color/image so using blend to combine the 2 */
+  background-blend-mode: multiply;
+  background-size: cover;
+  text-decoration: none;
+  border: 3px solid white;
+  margin: 15px auto;
+  padding: 29px auto;
+  transition: height 3s ease-out;
+  overflow: hidden;
+}
+
+.flexbox-item3:hover>.text3 {
+  height: 70vh;
+}
+
+/* ------------------------------------ */
+
 .menuback {
 
   height: 100vh;
@@ -52,6 +253,93 @@ h1 {
   color: white;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
+  font-size: 40px;
   font-weight: 500;
-  padding-top: 120px;
+  /* padding-top: 120px; */
+}
+
+.h1-header {
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  border: 2px solid white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+.wrapper2 {
+  width: 400px;
+  height: 450px;
+  color: #000;
+  top: 65%;
+  left: 50%;
+  padding: 60px 30px;
+  position: absolute;
+  background-color: rgba(159, 153, 151, 0.5);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 8px 8px 50px #000;
+}
+
+#registerSubmit {
+  background-color: rgb(100, 87, 78) !important;
+  border-color: rgb(100, 87, 78) !important;
+}
+
+.bottom-text {
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  height: 30px;
+  padding-top: 1%;
+}
+
+.bottom-text input {
+  width: 10%;
+  float: left;
+}
+
+.socials {
+  margin-top: 12%;
+  text-align: center;
+}
+
+.socials a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+
+
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.socials a:nth-child(1) {
+  background: #3b5998
+}
+
+.socials a:nth-child(2) {
+  background: #55acee
+}
+
+.socials a:nth-child(3) {
+  background: #9f3760
+}
+
+.socials a:nth-child(4) {
+  background: #3b5998
+}
+
+#overlay {
+  position: absolute;
+
+  z-index: -5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+
 }
